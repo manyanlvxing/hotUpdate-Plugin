@@ -1,0 +1,118 @@
+<h2>foobar</h2>
+<hr />
+<div>State:
+    <span>{{msg}}</span>
+</div>
+<hr />
+<ui-button @click="onChange">Send To Main</ui-button>
+<hr/>
+<h3>输入框</h3>
+<ui-input class="massive">请输入</ui-input>
+<ui-webview src="http://www.cocos.com/"></ui-webview>
+<hr/>
+<div class="group">
+    <ui-hint class="bottom" position="50%">Position = 20%</ui-hint>
+    <ui-hint class="top" position="-20px">Position = -20px</ui-hint>
+    <ui-hint class="left" position="30%">Hello World <br> Position = 30%</ui-hint>
+    <ui-hint class="right" position="-15px">Hello World <br> Position = -15px</ui-hint>
+</div>
+<hr/>
+<!-- <h3/>
+<ui-button pressed>pressed</ui-button>
+<ui-button focused>focused</ui-button>
+<ui-button disabled>disabled</ui-button>
+<hr/>
+<ui-button class="mini">Mini</ui-button>
+<ui-button class="tiny">Tiny</ui-button>
+<ui-button class="small">Small</ui-button>
+<ui-button class="medium">Medium</ui-button>
+<ui-button class="large">Large</ui-button>
+<ui-button class="big">Big</ui-button>
+<ui-button class="huge">Huge</ui-button>
+<ui-button class="massive">Massive</ui-button>
+<hr/>
+<ui-button style="width: 100px;">Default</ui-button>
+<ui-button style="width: 100px;" class="red">Red</ui-button>
+<ui-button style="width: 100px;" class="green">Green</ui-button>
+<ui-button style="width: 100px;" class="blue">Blue</ui-button>
+<hr/>
+<ui-button class="transparent">Default</ui-button>
+<ui-button class="red transparent">Red</ui-button>
+<ui-button class="green transparent">Green</ui-button>
+<ui-button class="blue transparent">Blue</ui-button> -->
+<!-- <hr/>
+<ui-color placeholder="Normal..."></ui-color>
+<ui-color placeholder="Focused..." focused></ui-color>
+<ui-color placeholder="Disabled..." disabled></ui-color>
+<hr/>
+<ui-select class='big' value="4">
+    <option value="0">Foo</option>
+    <option value="1">Bar</option>
+    <option value="2">Hello</option>
+    <option value="3">World</option>
+    <option value="4">A Long Text</option>
+</ui-select>
+<hr/>
+<ui-asset class="flex-1" type="cc.SpriteFrame" droppable="asset"></ui-asset>
+<hr/>
+<ui-node class="flex-1" type="cc.Node" typename="Node" droppable="node"></ui-node>
+<hr/>
+<ui-box-container class="shadow">
+    <!-- 一些标签元素 -->
+<ui-prop name="foo" type="string">
+    <ui-input></ui-input>
+</ui-prop>
+<ui-prop name="bar" type="string">
+    <ui-input></ui-input>
+</ui-prop>
+<!-- ............. -->
+</ui-box-container>
+<hr/> -->
+<ui-drop-area droppable="file">file</ui-drop-area>
+<hr/>
+<ui-prop value="0.5"></ui-prop>
+<hr/>
+<ui-prop name="Color Label" class="blue" type="number" value="20"></ui-prop>
+<hr/>
+<!-- <ui-prop name="object" class="red" type="object" value="{" Name ":"Foobar ","ID ":1000,"Enable ":true}"></ui-prop> -->
+<hr/>
+<ui-prop name="Rotation" type="number" value="0" slidable tooltip="相对父节点的旋转，以度为单位，输入正值时顺时针旋转">
+    <ui-num-input></ui-num-input>
+</ui-prop>
+<hr/>
+<ui-prop name="Enum" type="enum" value="2">
+    <div class="user-content">
+        <option value="0">Enum 001</option>
+        <option value="1">Enum 002</option>
+        <option value="2">Enum 003</option>
+        <option value="3">Enum 004</option>
+    </div>
+</ui-prop>
+<hr/>
+<ui-prop-table>
+    <!-- 内部需使用 template 包裹 -->
+    <template>
+        <!-- ui-row 包裹单个组件时为两栏效果 -->
+        <ui-row name="Basic">
+            <ui-input  class="fill" value="Foobar" placeholder="User Name"></ui-input>
+        </ui-row>
+    </template>
+</ui-prop-table>
+<hr/>
+<ui-prop-table class="debug">
+    <template>
+        <ui-row name="Disabled" disabled>
+            <ui-input value="Disabled"></ui-input>
+        </ui-row>
+        <ui-row name="Readonly" readonly>
+            <ui-input value="Readonly"></ui-input>
+        </ui-row>
+        <ui-row name="new" >
+            <ui-input value="new"></ui-input>
+        </ui-row>
+        <ui-row name="new" >
+            <ui-input value="new"></ui-input>
+        </ui-row>
+    </template>
+</ui-prop-table>
+<hr/>

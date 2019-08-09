@@ -1,0 +1,17 @@
+<div>
+    <ui-prop tooltip='版本信息' name='version' class='blue'>
+        <ui-input v-value='v' placeholder="1.0" @change='onChange' type='string'></ui-input>
+    </ui-prop>
+    <ui-prop tooltip='资源服务器地址' name='remoteUrl' class='blue'>
+        <ui-input v-value='remoteUrl' placeholder="http:120.0.0.1:8080" type='string'></ui-input>
+        <hr/>
+        <ui-button class='green' @click="hotUpdate">构建</ui-button>
+    </ui-prop>
+    <textarea class="flex-1 " id="logTextArea" v-model="logMsg" style="width: 100%; height: 100%; background: #252525;	color: #da6934;	border-color: #6df512;"></textarea>
+    <!-- <div>
+        <ui-prop name='.' class='flex-1 green'>
+            <ui-button class='flex-1 green' @click="hotUpdate">构建</ui-button>
+        </ui-prop>
+    </div> -->
+
+</div>
