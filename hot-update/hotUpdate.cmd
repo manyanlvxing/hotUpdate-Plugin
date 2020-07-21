@@ -1,12 +1,13 @@
-cd %4
-%5
-if exist ./remote-assets (
+%4
+cd %3
+if exist remote-assets (
 rd /s /q remote-assets
 ) 
 md remote-assets\res 
-xcopy /s /q build\jsb-link\res remote-assets\res 
+xcopy /s  build\jsb-link\res remote-assets\res 
 md remote-assets\src
-xcopy /s /q build\jsb-link\src remote-assets\src
-cd %3
-%5
+xcopy /s  build\jsb-link\src remote-assets\src
+cd %5
 node version_generator.js -v %1 -u %2 -s ..\..\build\jsb-link -d ..\..\remote-assets
+
+exit
